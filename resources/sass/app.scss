@@ -10,10 +10,18 @@
 @import 'component/register';
 
 //custum
-@import "custum";
+@import 'custum';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import 'base';
+
+
+
+// responsive query
+@import 'query/login';
+@import 'query/register';
+
 
 .navbar-laravel {
   background-color: #fff;

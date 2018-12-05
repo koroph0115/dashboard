@@ -1,0 +1,14 @@
+
+.login-container{
+    margin-top: 120px;
+
+    .connexion{
+        font-family: Georgia;
+        font-size: large;
+        text-shadow:1px 2px 2px $coopBlack;
+        color:red;
+        padding:5px  20px;
+        background-color: $coopBlueClair;
+    }
+
+}
