@@ -14009,10 +14009,10 @@ if (token) {
  * for events that are broadcast by Laravel. Echo and event broadcasting
  * allows your team to easily build robust real-time web applications.
  */
-
+//require('./dashboard/dashboard');
 // import Echo from 'laravel-echo'
 
-// window.Pusher = require('pusher-js');
+// window.Pusher = require('pusher-dashboard');
 
 // window.Echo = new Echo({
 //     broadcaster: 'pusher',

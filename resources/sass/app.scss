@@ -1,7 +1,7 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
+@import "font/style.css";
 // Variables
 @import 'variables';
 
@@ -15,8 +15,9 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import 'base';
+@import 'mix';
 
-
+@import "component/admin/dashbord";
 
 // responsive query
 @import 'query/login';
@@ -24,6 +25,7 @@
 
 
 .navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  //background-color: #fff;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }

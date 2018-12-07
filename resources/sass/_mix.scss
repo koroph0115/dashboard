@@ -1,0 +1,31 @@
+
+@mixin background-image($proprety) {
+    background-image: linear-gradient($proprety);
+    background-image: -moz-linear-gradient($proprety);
+    background-image: -o-linear-gradient($proprety);
+    background-image: -webkit-linear-gradient($proprety);
+}
+
+@mixin transion($proprety) {
+    transition:$proprety;
+    -webkit-transition:$proprety;
+    -moz-transition:$proprety;
+    -ms-transition:$proprety;
+    -o-transition:$proprety;
+}
+
+@mixin transform($proprety) {
+    transform: $proprety        ;
+    -webkit-transform: $proprety        ;
+    -moz-transform: $proprety        ;
+    -ms-transform: $proprety        ;
+    -o-transform: $proprety        ;
+}
+
+@mixin border-raduis($proprety) {
+    border-radius:$proprety ;
+    -webkit-border-radius:$proprety ;
+    -moz-border-radius:$proprety ;
+    -ms-border-radius:$proprety ;
+    -o-border-radius:$proprety ;
+}

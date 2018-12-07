@@ -1,0 +1,70 @@
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color:$coopBlack;
+    z-index: 100000;
+    @include transion(all 0.5s);
+    .side-item {
+        /*custum side-item 1 and 2*/
+        @for $i from 1 to 3 {
+            &:nth-child(#{$i}) {
+
+                height: 65px;
+                @if $i==2 {
+                    & {
+                        background-image: url("../../../../../public/svg/404.svg");
+                        background-size: cover;
+                        padding: 16px 1px 0px 10px;
+                        img {
+                            @extend %avatar;//base.scss
+                        }
+                    }
+                }
+                @else {
+                    & {
+                        color: white;
+                        text-transform: uppercase;
+                        background-color: $coopBlue;
+                        padding: 22px 1px 0px 10px;
+
+                    }
+                }
+            }
+        }
+        /* end custum */
+        a {
+            text-decoration: none;
+            font-family: serif;
+            text-transform: capitalize;
+            font-size: 20px;
+            padding: 10px 1px 0px 10px;
+            display: block;
+            width: 100%;
+            color: white;
+            border-bottom: 1px dashed rgba($coopBlueClair,0.3);
+            border-left: 4px solid transparent;
+            height: 50px;
+            overflow: hidden;
+            &:hover {
+                background-color: rgba(grey, 0.2);
+                border-left-color:$coopGrey;
+
+            }
+        }
+
+    }
+}
+.sidebarhide {
+    width: 0px !important;
+    @include transion(all .5s);
+}
+.sidebarshow {
+    width: 150px !important;
+    @include transion(all .2s);
+}
+.sidebarextend{
+    margin-left: 0px !important;
+    @include transion(all .2s);
+
+}

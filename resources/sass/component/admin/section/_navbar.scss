@@ -1,0 +1,46 @@
+.navbar {
+    top: 0px;
+    height: 65px;
+    z-index: 10000;
+    background-color:$coopGrey;
+    .nav-item{
+
+        .dropdown{
+            img {
+                cursor: pointer;
+                @extend %avatar;//base.scss
+                margin-right: 30px;
+
+            }
+            .navbar-signal{
+                &{
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    top:18px;
+                    right: 15px;
+                    border-width: 6px;
+                    border-style: solid;
+                    //background-color: black;
+                    border-color: white transparent transparent transparent;
+
+                }
+            }
+            .dropdown-menu{
+                left:-80px;
+                top:50px;
+                &::before{
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    top:-23px;
+                    right: 40px;
+                    border-width: 15px;
+                    border-style: solid;
+                    //background-color: black;
+                    border-color: transparent transparent white transparent;
+                }
+            }
+        }
+    }
+}

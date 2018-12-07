@@ -1,4 +1,8 @@
-container{
-    margin-top: 160px;
-    background-color: #1b1e21;
+.register-container{
+   @extend .login-container;
+
+    .register{
+        @extend .connexion;
+    }
 }
+

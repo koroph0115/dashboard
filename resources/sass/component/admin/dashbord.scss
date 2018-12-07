@@ -1,0 +1,48 @@
+
+
+
+
+
+.container-alpha {
+    padding: 20px 45px;
+}
+
+.actived {
+    background-color: rgba(grey, 0.2);
+    border-left-color:  $coopGrey !important;
+}
+%avatar{
+    height: 40px;
+    width: 40px;
+    @include border-raduis(100%);
+}
+
+
+
+
+/*=============================================
+=            section sidebar            =
+=============================================*/
+@import './section/sidebar';
+
+
+/*=====  End of section sidebar  ======*/
+
+.app {
+    margin-left: 200px;
+    @include transion(all 0.5s);
+    @import "section/navbar";
+    main {
+        /* padding: 0 5px;*/
+    }
+
+    /** section footer*/
+
+    footer{
+        border-top:1px solid rgb(214, 214, 214);
+        font-size: 13px;
+    }
+
+    /** fin footer*/
+}
+

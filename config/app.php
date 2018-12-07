@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'CoopManager'),
+    'name' => env('APP_NAME', 'Dashboard'),
 
     /*
     |--------------------------------------------------------------------------
